@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html>
+	<head>
+	<meta name= "viewport" content="width = device-width, initial-scale = 1.0">
 <title>Tisha's Salon</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Berkshire+Swash">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+
+		 #googleMap {
+        position: relative;
+        padding-bottom: 75%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+		#googleMap iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .w3-row-padding img {margin-bottom: 12px}
 /* Set the width of the sidebar to 120px */
@@ -16,28 +33,30 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
+</head>
 <body class="w3-black">
 
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-     <img src="images/head.png" style="width:100%">
+     <img src="use/woman.png" style="width:100%">
     <p>HOME</p>
   </a>
   <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <img src="images/blow.png" style="width:100%">
+    <img src="use/hair-dryer.png" style="width:100%">
     <p>ABOUT</p>
   </a>
   <a href="#services" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-   <img src="images/scissors.png" style="width:100%">
+   <img src="use/scissors.png" style="width:100%">
     <p>SERVICES</p>
   </a>
   <a href="#designers" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <img src="images/hair.png" style="width:100%">
+    <img src="use/hair-iron.png" style="width:100%">
     <p>DESIGNERS</p>
   </a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <img src="images/comb.png" style="width:100%">
+    <img src="use/comb.png" style="width:100%">
     <p>CONTACT</p>
+	<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a><a href="https://www.flaticon.com/" </a></div>
   </a>
 </nav>
 
@@ -55,8 +74,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <div class="w3-padding-large" id="main">
   
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">Tisha's</span> Salon & Spa Bar</h1>
-    <p>Leechburg, PA</p>
+   <h1 class="w3-jumbo" style="font-family: Berkshire Swash;"><span class="w3-hide-small">Tisha's</span>
+	Salon & Spa Bar</h1>
+    <p style="font-family: Berkshire Swash;">Leechburg, PA</p>
    
   <div class="w3-padding-64 w3-content" id="photos">
     <hr style="width:200px" class="w3-opacity">
@@ -81,7 +101,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
     <h2 class="w3-text-light-grey">About</h2>
-    <hr style="width:200px" class="w3-opacity">
+    <hr style="width:200px" class="w3-opacity"><font size="4">
     <p>Hello beautiful people! We are excited to announce that we are switching from chemical
 	based products to a natural and organic salon. We are the first and only establishment to 
 	use these healthy color lines and products. This has been my dream for a very long time. 
@@ -90,7 +110,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 	grey coverage and the shine is just beautiful! Please feel free to call if you have any 
 	questions or concerns, we are happy to help!
     </p>
-	<p>Helping the environment while healing your hair!</p>
+	<p>Helping the environment while healing your hair!</p></font>
 	   <img src="images/rose.jpg" style="width:100%">
     
      <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="services">
@@ -154,13 +174,21 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     
     
     <h3 class="w3-padding-24 w3-text-light-grey">Times and Availability</h3>  
-    <img src="use/calendar.PNG" style="width:100%">
+	<div class="w3-col m6 w3-large w3-margin-bottom">
+	<ul>
+		<li>Tuesday-Thursday: 10am-7pm</li>
+		<li>Friday: 10am-6pm</li>
+		<li>Saturday: 9am-2pm</li>
+		<li>Sunday-Monday: Closed</li>
+	</ul>
   </div>
   
     <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="designers">
+	  <font color="black"><p>fhduohfoehrfoeijh</p></font>
     <h2 class="w3-text-light-grey">Designers</h2>
+	
 	<hr style="width:200px" class="w3-opacity">
-	<p>We are a great team. All capable, hard-working females with our own specialties.
+	<p>We are a great team. All capable, hard-working females with our own specialities.
 	We are now hiring!
 	If you are an experienced cosmetologist or nail technician, contact us!
     </p>
@@ -186,18 +214,18 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       </div>
           </div>
   
-</div>
+	</div>
 
-<div id="googleMap" style="height:400px;" class="w3-grayscale-max">
+	<div id="googleMap" style="height:400px;" class="w3-grayscale-max">
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.0996192542634!2d-7
 		9.60912168424885!3d40.627684979341275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8
 		834bb1e463bf71d%3A0x95bb8a6ad5199a0b!2sTisha&#39;s+Salon+%26+Spa+Bar+LLC!5e0!3m2!1sen!2sus!4
 		v1524144888949""w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge" 
 		width="980" height="450" frameborder="0" style="border:0"></iframe></div>
 		
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <p>Thanks for visiting!</p>
-</footer>
+	<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+		<p>Thanks for visiting!</p>
+	</footer>
 
  
 </body>
